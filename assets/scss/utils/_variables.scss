@@ -46,6 +46,8 @@ $yellow:  #ffc107 !default;
 $green:   #198754 !default;
 $teal:    #20c997 !default;
 $cyan:    #0dcaf0 !default;
+$newblue: #4A69E8 !default; // 新顏色變數-primary
+$newgreen: #36C99F !default; // 新顏色變數-secondary
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -63,7 +65,10 @@ $colors: (
   "black":      $black,
   "white":      $white,
   "gray":       $gray-600,
-  "gray-dark":  $gray-800
+  "gray-dark":  $gray-800,
+  // 新顏色變數
+  "newblue":    $newblue,
+  "newgreen":    $newgreen,
 ) !default;
 // scss-docs-end colors-map
 
@@ -85,6 +90,15 @@ $blue-600: shade-color($blue, 20%) !default;
 $blue-700: shade-color($blue, 40%) !default;
 $blue-800: shade-color($blue, 60%) !default;
 $blue-900: shade-color($blue, 80%) !default;
+
+// 定義新顏色變數-primary
+$newblue-97: #F1F4FD;
+$newblue-90: #D2D9F9;
+$newblue-80: #A4B4F3;
+$newblue-70: #778EEE;
+$newblue-60: #4A69E8;
+$newblue-40: #1736B5;
+$newblue-25: #0E2271;
 
 $indigo-100: tint-color($indigo, 80%) !default;
 $indigo-200: tint-color($indigo, 60%) !default;
@@ -156,6 +170,13 @@ $green-700: shade-color($green, 40%) !default;
 $green-800: shade-color($green, 60%) !default;
 $green-900: shade-color($green, 80%) !default;
 
+// 定義新顏色變數-secmary
+$newgreen-90: #D7F4EC;
+$newgreen-70: #87DEC5;
+$newgreen-50: #36C99F;
+$newgreen-35: #268C6F;
+
+
 $teal-100: tint-color($teal, 80%) !default;
 $teal-200: tint-color($teal, 60%) !default;
 $teal-300: tint-color($teal, 40%) !default;
@@ -186,6 +207,24 @@ $blues: (
   "blue-700": $blue-700,
   "blue-800": $blue-800,
   "blue-900": $blue-900
+) !default;
+
+// 建立 $newblues
+$newblues: (
+  "newblue-97": $newblue-97,
+  "newblue-90": $newblue-90,
+  "newblue-80": $newblue-80,
+  "newblue-70": $newblue-70,
+  "newblue-60": $newblue-60,
+  "newblue-40": $newblue-40,
+  "newblue-25": $newblue-25
+) !default;;
+// 建立 $newgreens
+$newgreens: (
+  "newgreen-90": $newgreen-90,
+  "newgreen-70": $newgreen-70,
+  "newgreen-50": $newgreen-50,
+  "newgreen-35": $newgreen-35
 ) !default;
 
 $indigos: (
@@ -298,8 +337,10 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
+// $primary:       $blue !default;
+$primary:      $newblue-60 !default; // 新顏色變數-primary
+// $secondary:     $gray-600 !default;
+$secondary:     $newgreen-50 !default; // 新顏色變數-secondary
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
