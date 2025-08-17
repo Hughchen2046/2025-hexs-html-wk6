@@ -1,22 +1,43 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
   <div class="container">
     <a class="navbar-brand" href="index.html"><img src="../assets/images/logo.svg" alt="logo"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse" id="navbarHeader">
       <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
         <li class="nav-item me-3">
-          <a class="nav-link" href="#">服務方案</a>
+          <a class="nav-link tw-bd-md nav-fill-link" href="#">服務方案</a>
         </li>
         <li class="nav-item me-3">
-          <a class="nav-link" href="#">關於職旅</a>
+          <a class="nav-link tw-bd-md nav-fill-link" href="#">關於職旅</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">聯絡我們</a>
+          <a class="nav-link tw-bd-md nav-fill-link" href="#">聯絡我們</a>
         </li>                
       </ul>
     </div>
-    <a href="member.html"><img src="/assets/images/avatar.png" alt="user-img" class="rounded-circle me-2 user-img border">Mokumaru</a>
-  </div>
+    <a href="#" class="tw-bd-md nav-outline-link ms-auto">登入/註冊</a>
+    <!-- <button class="navbar-toggler nav-toggle-header" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon icon-24"></span>
+    </button>     -->
+    <button class="navbar-toggler nav-toggle-header ms-3" type="button" data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon icon-24"></span>
+    </button>
+    <div class="offcanvas offcanvas-top d-lg-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-center align-items-center flex-grow-1">
+          <button type="button" class="btn-close icon-24 d-lg-none align-self-end mb-4" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+          <li class="nav-item">
+            <a class="nav-link tw-bd-md nav-menu-link" href="#">服務方案</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link tw-bd-md nav-menu-link" href="#">關於職旅</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link tw-bd-md nav-menu-link" href="#">聯絡我們</a>
+          </li>
+        </ul>
+        <button type="button" class="btn btn-df-lg w-100 tw-t-2xl mt-12">登入/註冊</button>
+        <!-- <a href="member.html"><img src="/assets/images/avatar.png" alt="user-img" class="rounded-circle me-2 user-img border">Mokumaru</a> -->
+      </div>
 </nav>

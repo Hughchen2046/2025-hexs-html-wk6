@@ -1,25 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
-    <title>index</title>
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
 
-    <h1 class="index-title ">我是首頁</h1>
-    <div class="box bg-primary mb-3"></div>
-    <div class="box bg-secondary mb-3"></div>
-    <button type="button" class="btn btn-primary">確認按鈕</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <title>index</title>
+</head>
 
-    <h2>WK5作業-請點擊右上會員圖</h2>
+<body>
+  <%- include('./layout/header'); -%>
+    <section class="position-relative">
+      <div class="container py-9 text-lg-center">
+        <div class="text-lg-center d-lg-inline-block">
+          <h2 class="tw-t-5xl tw-ft-lg text-center">一起陪伴、探索</h2>
+          <h2 class="tw-t-5xl tw-ft-lg text-center mb-5">還有你那些未完成的夢</h2>
+          <div class="mb-8 d-flex flex-column align-items-center flex-lg-row align-items-lg-center justify-content-lg-between">
+            <div class="py-1 mb-4 mb-lg-0">
+              <p class="tw-bg-lg text-natural-50 text-center text-lg-start">自由工作很美，也很難。</p>
+              <p class="tw-bg-lg text-natural-50 text-wrap text-center text-lg-start">我們用 1 對 1 陪伴，陪你從第一步開始，直到夢想變成日常</p>
+            </div>
+            <button type="button" class="btn btn-df-lg tw-t-2xl d-flex align-items-center">開始你的職旅 <span
+                class="material-symbols-outlined">
+                arrow_forward_ios
+              </span></button>
+          </div>
+        </div>
+      </div>
+      <img class="d-lg-none" src="/assets/images/index/hero-4.png" alt="banner">
+      <img class="position-absolute ellipse-image z-n1" src="/assets/images/index/gradient-ball.png" alt="">
+      </div>
+      <div class="container-fluid d-none d-lg-block">
+        <div class="row g-6">
+        <div class="col">
+          <img src="/assets/images/index/hero-1.png" alt="" class="w-100 h-100 object-fit-cover">
+        </div>
+        <div class="col d-flex flex-column gap-6 h-100">
+          <img src="/assets/images/index/hero-2.png" alt="" class="w-100 h-100 object-fit-cover">
+          <img src="/assets/images/index/hero-3.png" alt="" class="w-100 h-100 object-fit-cover">
+        </div>
+        <div class="col">
+          <img src="/assets/images/index/hero-4.png" alt="" class="w-100 h-100 object-fit-cover">
+        </div>          
+        </div>
+
+      </div>
+
+    </section>
+
 
 
     <%- include('./layout/footer'); -%>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+      <script type="module" src="../main.js"></script>
+</body>
+
 </html>

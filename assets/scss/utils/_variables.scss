@@ -6,7 +6,8 @@
 // Color system
 
 // scss-docs-start gray-color-variables
-$white:    #fff !default;
+// $white:    #fff !default;
+$white: #FCFCFD !default; // 新白色變數
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
@@ -16,7 +17,8 @@ $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
-$black:    #000 !default;
+// $black:    #000 !default;
+$black: #141A1F !default; // 新黑色變數
 // scss-docs-end gray-color-variables
 
 // fusv-disable
@@ -40,14 +42,16 @@ $blue:    #0d6efd !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #d63384 !default;
-$red:     #dc3545 !default;
+$red:     #E51300 !default;
 $orange:  #fd7e14 !default;
-$yellow:  #ffc107 !default;
-$green:   #198754 !default;
+$yellow:  #F58f00 !default;
+$green:   #47C20A !default;
 $teal:    #20c997 !default;
 $cyan:    #0dcaf0 !default;
 $newblue: #4A69E8 !default; // 新顏色變數-primary
 $newgreen: #36C99F !default; // 新顏色變數-secondary
+$natural: #667F99 !default; // 新顏色變數-natural
+
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -69,6 +73,7 @@ $colors: (
   // 新顏色變數
   "newblue":    $newblue,
   "newgreen":    $newgreen,
+  "natural" : $natural,
 ) !default;
 // scss-docs-end colors-map
 
@@ -100,6 +105,16 @@ $newblue-60: #4A69E8;
 $newblue-40: #1736B5;
 $newblue-25: #0E2271;
 
+// 定義新顏色變數-natural
+$natural-90: #E0E5EB;
+$natural-85:#D1D9E1;
+$natural-75: #B2BFCC;
+$natural-60: #8599AD;
+$natural-50: #667F99;
+$natural-30: #3D4D5C;
+
+$alpha: rgba(20, 26, 31, 0.5) !default; // 新黑色變數-alpha
+
 $indigo-100: tint-color($indigo, 80%) !default;
 $indigo-200: tint-color($indigo, 60%) !default;
 $indigo-300: tint-color($indigo, 40%) !default;
@@ -130,15 +145,18 @@ $pink-700: shade-color($pink, 40%) !default;
 $pink-800: shade-color($pink, 60%) !default;
 $pink-900: shade-color($pink, 80%) !default;
 
-$red-100: tint-color($red, 80%) !default;
-$red-200: tint-color($red, 60%) !default;
-$red-300: tint-color($red, 40%) !default;
-$red-400: tint-color($red, 20%) !default;
-$red-500: $red !default;
-$red-600: shade-color($red, 20%) !default;
-$red-700: shade-color($red, 40%) !default;
-$red-800: shade-color($red, 60%) !default;
-$red-900: shade-color($red, 80%) !default;
+$red-90: #FFBDB9;
+$red-70: #FF7467;
+$red-45: #E51300;
+// $red-100: tint-color($red, 80%) !default;
+// $red-200: tint-color($red, 60%) !default;
+// $red-300: tint-color($red, 40%) !default;
+// $red-400: tint-color($red, 20%) !default;
+// $red-500: $red !default;
+// $red-600: shade-color($red, 20%) !default;
+// $red-700: shade-color($red, 40%) !default;
+// $red-800: shade-color($red, 60%) !default;
+// $red-900: shade-color($red, 80%) !default;
 
 $orange-100: tint-color($orange, 80%) !default;
 $orange-200: tint-color($orange, 60%) !default;
@@ -150,27 +168,33 @@ $orange-700: shade-color($orange, 40%) !default;
 $orange-800: shade-color($orange, 60%) !default;
 $orange-900: shade-color($orange, 80%) !default;
 
-$yellow-100: tint-color($yellow, 80%) !default;
-$yellow-200: tint-color($yellow, 60%) !default;
-$yellow-300: tint-color($yellow, 40%) !default;
-$yellow-400: tint-color($yellow, 20%) !default;
-$yellow-500: $yellow !default;
-$yellow-600: shade-color($yellow, 20%) !default;
-$yellow-700: shade-color($yellow, 40%) !default;
-$yellow-800: shade-color($yellow, 60%) !default;
-$yellow-900: shade-color($yellow, 80%) !default;
+$yellow-90: #FFEACC;
+$yellow-48: #F58f00;
+$yellow-35: #B26800;
+// $yellow-100: tint-color($yellow, 80%) !default;
+// $yellow-200: tint-color($yellow, 60%) !default;
+// $yellow-300: tint-color($yellow, 40%) !default;
+// $yellow-400: tint-color($yellow, 20%) !default;
+// $yellow-500: $yellow !default;
+// $yellow-600: shade-color($yellow, 20%) !default;
+// $yellow-700: shade-color($yellow, 40%) !default;
+// $yellow-800: shade-color($yellow, 60%) !default;
+// $yellow-900: shade-color($yellow, 80%) !default;
 
-$green-100: tint-color($green, 80%) !default;
-$green-200: tint-color($green, 60%) !default;
-$green-300: tint-color($green, 40%) !default;
-$green-400: tint-color($green, 20%) !default;
-$green-500: $green !default;
-$green-600: shade-color($green, 20%) !default;
-$green-700: shade-color($green, 40%) !default;
-$green-800: shade-color($green, 60%) !default;
-$green-900: shade-color($green, 80%) !default;
+$green-90: #DEFCCF;
+$green-40 : #47C20A;
+$green-30: #369108;
+// $green-100: tint-color($green, 80%) !default;
+// $green-200: tint-color($green, 60%) !default;
+// $green-300: tint-color($green, 40%) !default;
+// $green-400: tint-color($green, 20%) !default;
+// $green-500: $green !default;
+// $green-600: shade-color($green, 20%) !default;
+// $green-700: shade-color($green, 40%) !default;
+// $green-800: shade-color($green, 60%) !default;
+// $green-900: shade-color($green, 80%) !default;
 
-// 定義新顏色變數-secmary
+// 定義新顏色變數-secondary
 $newgreen-90: #D7F4EC;
 $newgreen-70: #87DEC5;
 $newgreen-50: #36C99F;
@@ -264,15 +288,18 @@ $pinks: (
 ) !default;
 
 $reds: (
-  "red-100": $red-100,
-  "red-200": $red-200,
-  "red-300": $red-300,
-  "red-400": $red-400,
-  "red-500": $red-500,
-  "red-600": $red-600,
-  "red-700": $red-700,
-  "red-800": $red-800,
-  "red-900": $red-900
+"red-90": $red-90,
+"red-70": $red-70,
+"red-45": $red-45,
+  // "red-100": $red-100,
+  // "red-200": $red-200,
+  // "red-300": $red-300,
+  // "red-400": $red-400,
+  // "red-500": $red-500,
+  // "red-600": $red-600,
+  // "red-700": $red-700,
+  // "red-800": $red-800,
+  // "red-900": $red-900
 ) !default;
 
 $oranges: (
@@ -288,27 +315,33 @@ $oranges: (
 ) !default;
 
 $yellows: (
-  "yellow-100": $yellow-100,
-  "yellow-200": $yellow-200,
-  "yellow-300": $yellow-300,
-  "yellow-400": $yellow-400,
-  "yellow-500": $yellow-500,
-  "yellow-600": $yellow-600,
-  "yellow-700": $yellow-700,
-  "yellow-800": $yellow-800,
-  "yellow-900": $yellow-900
+  "yellow-90": $yellow-90,
+  "yellow-48": $yellow-48,
+  "yellow-35": $yellow-35,
+  // "yellow-100": $yellow-100,
+  // "yellow-200": $yellow-200,
+  // "yellow-300": $yellow-300,
+  // "yellow-400": $yellow-400,
+  // "yellow-500": $yellow-500,
+  // "yellow-600": $yellow-600,
+  // "yellow-700": $yellow-700,
+  // "yellow-800": $yellow-800,
+  // "yellow-900": $yellow-900
 ) !default;
 
 $greens: (
-  "green-100": $green-100,
-  "green-200": $green-200,
-  "green-300": $green-300,
-  "green-400": $green-400,
-  "green-500": $green-500,
-  "green-600": $green-600,
-  "green-700": $green-700,
-  "green-800": $green-800,
-  "green-900": $green-900
+  "green-90": $green-90,
+  "green-40": $green-40,
+  "green-30": $green-30,
+  // "green-100": $green-100,
+  // "green-200": $green-200,
+  // "green-300": $green-300,
+  // "green-400": $green-400,
+  // "green-500": $green-500,
+  // "green-600": $green-600,
+  // "green-700": $green-700,
+  // "green-800": $green-800,
+  // "green-900": $green-900
 ) !default;
 
 $teals: (
@@ -419,7 +452,8 @@ $enable-grid-classes:         true !default;
 $enable-container-classes:    true !default;
 $enable-cssgrid:              false !default;
 $enable-button-pointers:      true !default;
-$enable-rfs:                  true !default;
+// $enable-rfs:                  true !default;
+$enable-rfs:                  false !default;
 $enable-validation-icons:     true !default;
 $enable-negative-margins:     false !default;
 $enable-deprecation-messages: true !default;
@@ -451,12 +485,18 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
-  6: $spacer * 5,
+  1: $spacer * .25, //4
+  2: $spacer * .5, //8
+  3: $spacer * .75, //12
+  4: $spacer, //16
+  5: $spacer * 1.25, //20
+  6: $spacer * 1.5, //24
+  7: $spacer * 2, //32
+  8: $spacer * 2.5, //40
+  9: $spacer * 3, //48
+  10: $spacer * 4, //64
+  11: $spacer * 4.5, //72
+  12: $spacer * 5, //80
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -477,14 +517,15 @@ $position-values: (
 // Settings for the `<body>` element.
 
 $body-text-align:           null !default;
-$body-color:                $gray-900 !default;
+// $body-color:                $gray-900 !default;
+$body-color:                $black !default;
 $body-bg:                   $white !default;
 
 $body-secondary-color:      rgba($body-color, .75) !default;
 $body-secondary-bg:         $gray-200 !default;
 
 $body-tertiary-color:       rgba($body-color, .5) !default;
-$body-tertiary-bg:          $gray-100 !default;
+$body-tertiary-bg:          $white !default;
 
 $body-emphasis-color:       $black !default;
 
@@ -559,7 +600,7 @@ $container-max-widths: (
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns:                12 !default;
-$grid-gutter-width:           1.5rem !default;
+$grid-gutter-width:           1.5rem !default; // 24px
 $grid-row-columns:            6 !default;
 
 // Container padding
@@ -581,16 +622,19 @@ $border-widths: (
   5: 5px
 ) !default;
 $border-style:                solid !default;
-$border-color:                $gray-300 !default;
+$border-color:                $natural-85 !default;
 $border-color-translucent:    rgba($black, .175) !default;
 // scss-docs-end border-variables
 
 // scss-docs-start border-radius-variables
+$border-radius-0:         0 !default;
 $border-radius:               .375rem !default;
 $border-radius-sm:            .25rem !default;
 $border-radius-lg:            .5rem !default;
+$border-radius-md:            .75rem !default; // 12
 $border-radius-xl:            1rem !default;
-$border-radius-xxl:           2rem !default;
+// $border-radius-xxl:           2rem !default;
+$border-radius-xxl:           1.5rem !default; // 24
 $border-radius-pill:          50rem !default;
 // scss-docs-end border-radius-variables
 // fusv-disable
@@ -598,7 +642,8 @@ $border-radius-2xl:           $border-radius-xxl !default; // Deprecated in v5.3
 // fusv-enable
 
 // scss-docs-start box-shadow-variables
-$box-shadow:                  0 .5rem 1rem rgba($black, .15) !default;
+// $box-shadow:                  0 .5rem 1rem rgba($black, .15) !default;
+$box-shadow:                  0 0 1rem 0 rgba(0, 0, 0, 0.12) !default; // 新黑色變數-alpha
 $box-shadow-sm:               0 .125rem .25rem rgba($black, .075) !default;
 $box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
 $box-shadow-inset:            inset 0 1px 2px rgba($black, .075) !default;
@@ -648,15 +693,16 @@ $aspect-ratios: (
 $font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // stylelint-enable value-keyword-case
-$font-family-base:            var(--#{$prefix}font-sans-serif) !default;
+// $font-family-base:            var(--#{$prefix}font-noto) !default;
+$font-family-base:            "Inter", "Noto Sans TC", sans-serif !default; // 新顏色變數-font-family-base
 $font-family-code:            var(--#{$prefix}font-monospace) !default;
 
 // $font-size-root affects the value of `rem`, which is used for as well font sizes, paddings, and margins
 // $font-size-base affects the font size of the body text
 $font-size-root:              null !default;
 $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
-$font-size-sm:                $font-size-base * .875 !default;
-$font-size-lg:                $font-size-base * 1.25 !default;
+$font-size-sm:                $font-size-base * 1 !default;
+$font-size-lg:                $font-size-base * 1.5 !default;
 
 $font-weight-lighter:         lighter !default;
 $font-weight-light:           300 !default;
@@ -671,8 +717,10 @@ $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
+$line-height-big:             1.2 !default; // Used for title display
+$line-height-small:           1.5 !default; // Used for body
 
-$h1-font-size:                $font-size-base * 2.5 !default;
+$h1-font-size:                $font-size-base * 3 !default;
 $h2-font-size:                $font-size-base * 2 !default;
 $h3-font-size:                $font-size-base * 1.75 !default;
 $h4-font-size:                $font-size-base * 1.5 !default;
@@ -695,7 +743,8 @@ $font-sizes: (
 $headings-margin-bottom:      $spacer * .5 !default;
 $headings-font-family:        null !default;
 $headings-font-style:         null !default;
-$headings-font-weight:        500 !default;
+// $headings-font-weight:        500 !default;
+$headings-font-weight:        700 !default;
 $headings-line-height:        1.2 !default;
 $headings-color:              inherit !default;
 // scss-docs-end headings-variables
@@ -712,15 +761,17 @@ $display-font-sizes: (
 
 $display-font-family: null !default;
 $display-font-style:  null !default;
-$display-font-weight: 300 !default;
+// $display-font-weight: 300 !default;
+$display-font-weight: 700 !default;
 $display-line-height: $headings-line-height !default;
 // scss-docs-end display-headings
 
 // scss-docs-start type-variables
-$lead-font-size:              $font-size-base * 1.25 !default;
-$lead-font-weight:            300 !default;
-
-$small-font-size:             .875em !default;
+// $lead-font-size:              $font-size-base * 1.25 !default;
+$lead-font-size:              $font-size-base * 1 !default;
+// $lead-font-weight:            300 !default;
+$lead-font-weight:            400 !default;
+$small-font-size:             .875em !default; // 14px
 
 $sub-sup-font-size:           .75em !default;
 
@@ -761,7 +812,8 @@ $list-inline-padding:         .5rem !default;
 
 $mark-padding:                .1875em !default;
 $mark-color:                  $body-color !default;
-$mark-bg:                     $yellow-100 !default;
+// $mark-bg:                     $yellow-100 !default;
+$mark-bg:                     #F58f00 !default; // 新顏色變數-mark-bg
 // scss-docs-end type-variables
 
 
@@ -861,7 +913,8 @@ $input-btn-border-width:      var(--#{$prefix}border-width) !default;
 
 // scss-docs-start btn-variables
 $btn-color:                   var(--#{$prefix}body-color) !default;
-$btn-padding-y:               $input-btn-padding-y !default;
+// $btn-padding-y:               $input-btn-padding-y !default;
+$btn-padding-y:               8px !default;
 $btn-padding-x:               $input-btn-padding-x !default;
 $btn-font-family:             $input-btn-font-family !default;
 $btn-font-size:               $input-btn-font-size !default;
@@ -892,9 +945,10 @@ $btn-link-focus-shadow-rgb:   to-rgb(mix(color-contrast($link-color), $link-colo
 
 // Allows for customizing button radius independently from global border radius
 // $btn-border-radius:           var(--#{$prefix}border-radius) !default;
-$btn-border-radius:           var(--#{$prefix}border-radius-xl);
+// $btn-border-radius:           var(--#{$prefix}border-radius-xl);
+$btn-border-radius:           $border-radius-md;
 // $btn-border-radius-sm:        var(--#{$prefix}border-radius-sm) !default;
-$btn-border-radius-sm:        var(--#{$prefix}border-radius-xl);
+$btn-border-radius-sm:        $border-radius-md;
 $btn-border-radius-lg:        var(--#{$prefix}border-radius-xl) !default;
 
 $btn-transition:              color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
@@ -1234,7 +1288,8 @@ $nav-underline-link-active-color:   var(--#{$prefix}emphasis-color) !default;
 // Navbar
 
 // scss-docs-start navbar-variables
-$navbar-padding-y:                  $spacer * .5 !default;
+// $navbar-padding-y:                  $spacer * .5 !default;
+$navbar-padding-y:                  12px !default;
 $navbar-padding-x:                  null !default;
 
 $navbar-nav-link-padding-x:         .5rem !default;
@@ -1750,8 +1805,10 @@ $spinner-border-width-sm: .2em !default;
 // scss-docs-start close-variables
 $btn-close-width:            1em !default;
 $btn-close-height:           $btn-close-width !default;
-$btn-close-padding-x:        .25em !default;
-$btn-close-padding-y:        $btn-close-padding-x !default;
+// $btn-close-padding-x:        .25em !default;
+// $btn-close-padding-y:        $btn-close-padding-x !default;
+$btn-close-padding-x:        10px !default;
+$btn-close-padding-y:        10px !default;
 $btn-close-color:            $black !default;
 $btn-close-bg:               url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$btn-close-color}'><path d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/></svg>") !default;
 $btn-close-focus-shadow:     $focus-ring-box-shadow !default;
@@ -1766,10 +1823,13 @@ $btn-close-white-filter:     invert(1) grayscale(100%) brightness(200%) !default
 // Offcanvas
 
 // scss-docs-start offcanvas-variables
-$offcanvas-padding-y:               $modal-inner-padding !default;
-$offcanvas-padding-x:               $modal-inner-padding !default;
+// $offcanvas-padding-y:               $modal-inner-padding !default;
+// $offcanvas-padding-x:               $modal-inner-padding !default;
+$offcanvas-padding-y:               24px !default;
+$offcanvas-padding-x:               24px !default;
 $offcanvas-horizontal-width:        400px !default;
-$offcanvas-vertical-height:         30vh !default;
+// $offcanvas-vertical-height:         30vh !default;
+$offcanvas-vertical-height:         100vh !default;
 $offcanvas-transition-duration:     .3s !default;
 $offcanvas-border-color:            $modal-content-border-color !default;
 $offcanvas-border-width:            $modal-content-border-width !default;

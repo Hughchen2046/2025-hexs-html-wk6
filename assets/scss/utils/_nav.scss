@@ -1,0 +1,42 @@
+.nav-fill-link,.nav-outline-link {
+  color: $black;
+  padding: 8px 16px;
+  border-radius: $border-radius-xl;
+  &:hover,&:active {
+    color: $black;
+    background-color: $natural-90;
+    border: 0;
+  }
+  @media (min-width: 960px) {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+}
+.nav-outline-link{
+    border: 1px solid $natural-85;
+}
+
+.nav-toggle-header {
+    color: $black;
+    font-size: 0;
+    padding: 10px;
+    border: 0;
+    &:hover,&:active {
+        background-color: $natural-90;
+        border-radius: $border-radius-xl;
+    }
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.nav-menu-link {
+    color: $black;
+    padding: 16px;
+  border-radius: $border-radius-xl;
+  &:hover,&:active {
+    color: $black;
+    background-color: $natural-90;
+    border: 0;    
+}
+}

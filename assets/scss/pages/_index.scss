@@ -1,7 +1,29 @@
-.index-title {
-  font-size: 100px;
+
+.text-natural-50{
+  color: $natural-50;
 }
-.box{
-  width: 100px;
-  height: 100px;
+.ellipse-image{
+  width: 560px;
+  height: 560px;
+  overflow-x: hidden;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media (min-width: 960px){
+  .tw-ft-lg{
+    font-size: 5rem !important;
+  }
+  .ellipse-image{
+    width: 800px;
+    height: 800px;
+
+  }
+  // .test{
+  //   display: inline-block;
+  //   text-align: center;
+  // }
+  .test-1{
+    width: fit-content;
+  }
 }
