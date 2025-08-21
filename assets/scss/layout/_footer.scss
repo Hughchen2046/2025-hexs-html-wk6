@@ -1,3 +1,11 @@
-.footer{
-
+.border-footer {
+  border-top: 1px solid transparent; 
+  border-image-source: linear-gradient(
+    90deg,
+    rgba(209, 217, 225, 0) 0%,
+    #D1D9E1 50%,
+    rgba(209, 217, 225, 0) 100%
+  );
+  border-image-slice: 1; 
 }
+

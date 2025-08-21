@@ -1,0 +1,17 @@
+
+.badge-pill{
+    padding: 4px 8px;
+    border-radius: 12px;
+}
+.contact-input-format{
+    border-radius: 8px;
+    padding: 16px 12px;
+}
+@media (min-width: 1024px){
+    .d-xlg-block{
+        display: block !important;
+    }
+    .w-lg-left{
+        width: 300px;
+    }
+}

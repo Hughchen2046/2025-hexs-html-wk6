@@ -33,3 +33,24 @@
     gap: 4px;
   }
 }
+
+.btn-df-outon-md {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  padding-right: 8px;
+  background-color: $white;
+  color: $black;
+  border: 1px solid $natural-85;
+  gap: 0;
+
+  &:hover {
+    border: 0;
+    background-color: $natural-90;
+  }
+  @media (min-width: 960px) {
+    padding-left: 20px;
+    padding-right: 12px;
+    gap: 4px;
+  }
+}
