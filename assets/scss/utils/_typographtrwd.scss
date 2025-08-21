@@ -16,6 +16,7 @@ $tw-font-sizes: (
   "t-3xl": (default: $font-size-base * 1.5,   lg: $font-size-base * 1.75),
   "t-2xl": (default: $font-size-base * 1.25,  lg: $font-size-base * 1.5),
   "t-xl":  (default: $font-size-base * 1.125, lg: $font-size-base * 1.25),
+  "t-md":  (default: $font-size-base * .875,     lg: $font-size-base * 1),
 
   "bd-lg": (default: $font-size-base * 1,     lg: $font-size-base * 1.125),
   "bd-md": (default: $font-size-base * .875,  lg: $font-size-base * 1),
@@ -55,3 +56,28 @@ $tw-font-sizes: (
 
 // 生成
 @include tw-type-utilities($tw-font-sizes);
+
+
+.en-fm-sm, .en-fm-lg, .en-fm-xl {
+  font-weight: 700;
+  line-height: 1.2;
+}
+.en-fm-sm{
+  font-size: 14px;
+}
+.en-fm-lg{
+  font-size: 1rem;
+}
+.en-fm-xl{
+  font-size: 18px;
+}
+
+
+@media (min-width: 960px) {
+  .en-fm-lg{
+    font-size: 1.125rem; // 18px
+  }
+  .en-fm-xl{
+    font-size: 1.25rem; // 20px
+  }
+}

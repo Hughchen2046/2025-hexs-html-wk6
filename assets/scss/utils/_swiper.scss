@@ -1,34 +1,23 @@
-    .swiper {
-      width: 800px;
+        .swiper {
+      width: 100%;
+      height: 100%;
     }
 
     .swiper-slide {
-      height: 300px;
-      background: #882525;
-      line-height: 300px;
-      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
-    .swiper-slide:nth-child(2) {
-      background: #8acc7d;
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
-    .swiper-slide:nth-child(3) {
-      background: #b7cc7d;
+    .swiper-slide .card-serve-img{
+      width: 160px;
+      height: 160px;
     }
-
-    .swiper-slide:nth-child(4) {
-      background: #9eb75c;
-    }
-
-    .swiper-slide:nth-child(5) {
-      background: #7da8cc;
-    }
-
-    .swiper-slide:nth-child(6) {
-      background: #96cc7d;
-    }
-
-    .swiper-slide:nth-child(7) {
-      background: #cc7dae;
-    }
+    
